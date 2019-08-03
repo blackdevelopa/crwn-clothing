@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.styles.scss';
 
-import Directory from '../../components/directoryMenu/directory-menu.component'
+import Directory from '../../components/directoryMenu/directory-menu.component';
 
 const HomePage = () => (
   <div className="homepage">
