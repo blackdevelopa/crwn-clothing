@@ -10,6 +10,6 @@ export const addItemToCart = (cartItem, cartItemToAdd) => {
       cartItem
       )
   }
-
+  
   return [...cartItem, {...cartItemToAdd, quantity: 1}]
 }
