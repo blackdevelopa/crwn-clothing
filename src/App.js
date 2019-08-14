@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect} from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from "react-redux";
 import './App.css';
 import Homepage from './pages/homepage/homepage.component';
@@ -48,10 +48,10 @@ class App extends React.Component {
         {
           this.props.currentUser ? 
           <>
-            <Redirect to="/" />
             <Route exact path="/" component={Homepage} />
-            <Route exact path="/shop" component={ShopPage} />
+            <Route path="/shop" component={ShopPage} />
             <Route exact path="/checkout" component={Checkout} />
+            <Redirect to="/" />
           </> :
           <>
             <Redirect to="/auth" />
